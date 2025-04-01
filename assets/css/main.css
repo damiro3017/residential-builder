@@ -1,10 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap");
+@import url("./components/outline.css");
+
+:root {
+  --white-clr: #fff;
+  --brown-clr: #a59d84;
+  --beige-clr: #ecebde;
+  --grey-clr: #ecebde;
+  --black-clr: #000;
+}
 
 /* Global CSS Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 14px;
 }
 
 html,
@@ -20,6 +30,12 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 input,
@@ -53,4 +69,119 @@ h3 {
 
 h4 {
   font-size: 2.25rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Hader section */
+.header__section {
+  padding: 2rem;
+  background-color: var(--grey-clr);
+  position: relative;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo svg {
+  width: 100%;
+  max-width: 7.5rem;
+  height: 100%;
+}
+
+.header__navbar {
+  position: absolute;
+  background-color: var(--grey-clr);
+  min-height: 100vh;
+  width: 17.5rem;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  box-shadow: 0 0 100vmax rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.header__navbar.active {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+  transition: all ease-in-out 0.2s;
+}
+
+.header__navbar-list {
+  margin-top: 3rem;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header__navbar-item {
+  text-transform: uppercase;
+  padding: 0.5rem;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.header__navbar-item:hover {
+  border-bottom: 1px solid var(--black-clr);
+  border-top: 1px solid var(--black-clr);
+}
+
+.open__menu i,
+.close__menu i {
+  color: var(--black-clr);
+  font-size: 1.5rem;
+  border-radius: 0.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .header__navbar {
+    position: relative;
+    background-color: transparent;
+    min-height: auto;
+    width: auto;
+    opacity: 1;
+    visibility: visible;
+    box-shadow: none;
+    padding: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .header__navbar-list {
+    margin: 0;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .open__menu i,
+  .close__menu i {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
 }
