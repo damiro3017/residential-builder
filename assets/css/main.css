@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap");
 @import url("./components/outline.css");
 
 :root {
@@ -20,7 +20,7 @@
 html,
 body {
   height: 100%;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 img,
@@ -86,7 +86,7 @@ h4 {
 
 /* Hader section */
 .header__section {
-  padding: 2rem;
+  padding: 1rem;
   background-color: var(--grey-clr);
   position: relative;
 }
@@ -97,10 +97,9 @@ h4 {
   justify-content: space-between;
 }
 
-.header__logo svg {
+.header__logo img {
   width: 100%;
-  max-width: 7.5rem;
-  height: 100%;
+  max-width: 3.5rem;
 }
 
 .header__navbar {
