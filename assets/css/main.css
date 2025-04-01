@@ -97,6 +97,7 @@ p {
 
 /* Hero section */
 .hero__section {
+  margin-top: 5rem;
   background-color: var(--white-clr);
 }
 
@@ -113,6 +114,7 @@ p {
 }
 
 .hero__section-info p {
+  line-height: 1.5;
   margin-top: 0.5rem;
 }
 
