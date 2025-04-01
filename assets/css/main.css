@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Alata&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 @import url("./components/outline.css");
 @import url("./components/footer.css");
 @import url("./components/header.css");
 
 :root {
+  --black-clr: #000;
   --white-clr: #fff;
   --brown-clr: #a59d84;
   --beige-clr: #ecebde;
   --grey-clr: #ecebde;
-  --black-clr: #000;
 }
 
 /* Global CSS Reset */
@@ -19,6 +19,7 @@
   font-size: 14px;
   scroll-behavior: smooth;
   scrollbar-gutter: auto;
+  font-family: "Inter", sans-serif;
 }
 
 html,
@@ -72,17 +73,6 @@ h3 {
 
 h4 {
   font-size: 2rem;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Cardo", serif;
-}
-
-p {
-  font-family: "Alata", sans-serif;
 }
 
 .container {
