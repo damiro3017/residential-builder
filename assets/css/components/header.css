@@ -16,7 +16,6 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  font-weight: 600;
   text-transform: uppercase;
 }
 
@@ -32,7 +31,7 @@
   width: 17.5rem;
   top: 0;
   right: 0;
-  padding: 2rem 1rem;
+  padding: 2.5rem 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -66,7 +65,6 @@
   transition: all ease-in-out 0.3s;
   cursor: pointer;
   font-family: "Cardo", sans-serif;
-  font-weight: 600;
 }
 
 .header__navbar-item:hover {
@@ -79,11 +77,10 @@
   border-top: 1px solid var(--black-clr);
 }
 
-.open__menu i,
-.close__menu i {
-  color: var(--black-clr);
-  font-size: 1.5rem;
-  border-radius: 0.25rem;
+.open__menu svg,
+.close__menu svg {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -108,8 +105,8 @@
     flex-direction: row;
   }
 
-  .open__menu i,
-  .close__menu i {
+  .open__menu,
+  .close__menu {
     display: none;
     visibility: hidden;
     opacity: 0;
