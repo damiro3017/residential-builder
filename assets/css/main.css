@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap");
 @import url("./components/outline.css");
+@import url("./components/footer.css");
+@import url("./components/header.css");
 
 :root {
   --white-clr: #fff;
@@ -15,12 +17,13 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 14px;
+  scroll-behavior: smooth;
+  scrollbar-gutter: auto;
 }
 
 html,
 body {
   height: 100%;
-  font-family: "Cardo", sans-serif;
 }
 
 img,
@@ -56,147 +59,134 @@ ol {
 }
 
 h1 {
-  font-size: 3rem;
-}
-
-h2 {
   font-size: 2.75rem;
 }
 
-h3 {
+h2 {
   font-size: 2.5rem;
 }
 
-h4 {
+h3 {
   font-size: 2.25rem;
+}
+
+h4 {
+  font-size: 2rem;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Alata", serif;
+  font-family: "Cardo", serif;
+}
+
+p {
+  font-family: "Alata", sans-serif;
 }
 
 .container {
   max-width: 1200px;
   width: 100%;
+  height: 100%;
   margin: 0 auto;
+  padding: 1.5rem;
 }
 
-/* Hader section */
-.header__section {
-  padding: 1rem;
-  background-color: var(--grey-clr);
-  position: relative;
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+/* Hero section */
+.hero__section {
+  background-color: var(--white-clr);
 }
 
-.header {
+.hero {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-.header__logo {
+.hero__section-info {
+  text-align: center;
+  text-wrap: balance;
+}
+
+.hero__section-info p {
+  margin-top: 0.5rem;
+}
+
+.hero__section-img {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background-image: url("../img/projects/project-01.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.visit__project-btn {
+  background-color: var(--grey-clr);
+  color: var(--black-clr);
+  padding: 1rem;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.header__logo img {
-  width: 100%;
-  max-width: 3.5rem;
-}
-
-.header__navbar {
-  position: absolute;
-  background-color: var(--grey-clr);
-  min-height: 100vh;
-  width: 17.5rem;
-  top: 0;
-  right: 0;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  text-align: right;
-  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  visibility: hidden;
-}
-
-.header__navbar.active {
-  display: flex;
-  opacity: 1;
-  visibility: visible;
+  gap: 0.5rem;
   transition: all ease-in-out 0.2s;
 }
 
-.header__navbar-list {
-  margin-top: 3rem;
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.header__navbar-item {
-  text-transform: uppercase;
-  padding: 0.5rem;
-  border-top: 1px solid transparent;
-  border-bottom: 1px solid transparent;
-  transition: all ease-in-out 0.3s;
+.visit__project-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  font-weight: 600;
 }
 
-.header__navbar-item:hover {
-  border-bottom: 1px solid var(--black-clr);
-  border-top: 1px solid var(--black-clr);
+.visit__project-btn:hover {
+  background-color: var(--brown-clr);
+  color: var(--white-clr);
 }
 
-.header__navbar-item.active-item {
-  border-bottom: 1px solid var(--black-clr);
-  border-top: 1px solid var(--black-clr);
+.visit__project-btn i {
+  font-size: 1rem;
+  margin-bottom: 0.1rem;
+  transition: transform 0.3s ease;
 }
 
-.open__menu i,
-.close__menu i {
-  color: var(--black-clr);
+.visit__project-btn:hover i {
+  transform: translateX(0.2rem);
+}
+
+/* Main Focus section */
+.main__focus__section {
+  margin-top: 3rem;
+}
+
+.main__focus {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.main__focus-mission {
+  margin-top: 2rem;
+}
+
+.main__focus-mission-item h3 {
+  color: var(--brown-clr);
   font-size: 1.5rem;
-  border-radius: 0.25rem;
 }
 
-@media screen and (min-width: 768px) {
-  .header__navbar {
-    position: relative;
-    background-color: transparent;
-    min-height: auto;
-    width: auto;
-    opacity: 1;
-    visibility: visible;
-    box-shadow: none;
-    padding: 0;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
+.main__focus-mission-item p {
+  margin-top: 0.5rem;
+}
 
-  .header__navbar-list {
-    margin: 0;
-    align-items: center;
-    flex-direction: row;
-  }
-
-  .open__menu i,
-  .close__menu i {
-    display: none;
-    visibility: hidden;
-    opacity: 0;
-  }
+.main__focus-mission-item:nth-child(2) {
+  margin-top: 2rem;
 }
