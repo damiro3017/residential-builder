@@ -79,10 +79,12 @@ h2,
 h3,
 h4 {
   font-family: "Cardo", serif;
+  font-weight: 400;
 }
 
 p {
   font-family: "Outfit", sans-serif;
+  font-weight: 300;
 }
 
 .container {
@@ -234,7 +236,6 @@ p {
   opacity: 0;
   transition: all ease-in-out 0.3s;
   font-size: 1.5rem;
-  font-weight: 600;
   text-transform: uppercase;
 }
 
