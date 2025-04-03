@@ -259,7 +259,7 @@ p {
 }
 
 .our__services-item {
-  padding: 1rem;
+  padding: 1.5rem;
   background-color: var(--white-clr);
   display: flex;
   align-items: flex-start;
