@@ -8,7 +8,7 @@
   --white-clr: #fff;
   --brown-clr: #a59d84;
   --beige-clr: #ecebde;
-  --grey-clr: #ecebde;
+  --grey-clr: #ececeb;
 }
 
 /* Global CSS Reset */
@@ -343,4 +343,40 @@ p {
 .contact__us-send:hover svg {
   stroke: var(--white-clr);
   transform: translateX(0.2rem);
+}
+@media screen and (min-width: 768px) {
+  /* Hero section */
+  .hero__section-img {
+    max-height: calc(100vh - 20rem);
+  }
+
+  /* Main Focus section */
+  .main__focus__section {
+    padding: 5rem 0;
+  }
+
+  .main__focus-mission {
+    display: flex;
+    gap: 3rem;
+  }
+
+  .main__focus-mission-item {
+    background-color: var(--grey-clr);
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+  }
+
+  .main__focus-mission-item h3 {
+    font-size: 7rem;
+    opacity: 0.5;
+  }
+
+  .main__focus-mission-item p {
+    margin-top: 0;
+  }
+
+  .main__focus-mission-item:nth-child(2) {
+    margin-top: 0;
+  }
 }
