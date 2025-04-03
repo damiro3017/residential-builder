@@ -87,7 +87,7 @@ p {
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  padding: 1.5rem;
+  padding: 1rem;
 }
 
 /* Hero section */
@@ -167,7 +167,7 @@ p {
 
 /* Main Focus section */
 .main__focus__section {
-  margin-top: 5rem;
+  padding: 2rem 0;
 }
 
 .main__focus {
@@ -259,7 +259,7 @@ p {
 }
 
 .our__services-item {
-  padding: 2rem;
+  padding: 1rem;
   background-color: var(--white-clr);
   display: flex;
   align-items: flex-start;
@@ -276,7 +276,7 @@ p {
 
 /* Contact Us section */
 .contact__us__section {
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 
 .contact__us h2 {
