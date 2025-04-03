@@ -269,16 +269,15 @@ p {
   padding: 2rem 0;
 }
 
-.our__services {
-  display: flex;
-  align-items: center;
-  justify-self: center;
-  flex-direction: column;
-  gap: 2rem;
-}
-
 .our__services h2 {
   text-align: center;
+}
+
+.our__services__wrapper {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .our__services-item {
