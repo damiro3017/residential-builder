@@ -123,8 +123,9 @@ p {
 }
 
 .visit__project-btn {
-  background-color: var(--grey-clr);
-  color: var(--black-clr);
+  background-color: var(--black-clr);
+  color: var(--white-clr);
+  opacity: 0.7;
   padding: 1rem;
   text-transform: uppercase;
   position: absolute;
@@ -135,6 +136,7 @@ p {
   justify-content: center;
   gap: 0.5rem;
   transition: all ease-in-out 0.3s;
+  font-family: "Outfit", sans-serif;
 }
 
 .visit__project-btn {
@@ -148,19 +150,19 @@ p {
   background-color: var(--brown-clr);
   color: var(--white-clr);
   stroke: var(--grey-clr);
+  opacity: 1;
 }
 
 .visit__project-btn svg {
   width: 1rem;
   height: 1rem;
-  margin-bottom: 0.2rem;
-  stroke: var(--black-clr);
+  stroke: var(--white-clr);
   transition: all ease-in-out 0.3s;
 }
 
 .visit__project-btn:hover svg {
   stroke: var(--white-clr);
-  transform: translateX(0.3rem);
+  transform: translateX(0.2rem);
 }
 
 /* Main Focus section */
@@ -320,13 +322,14 @@ p {
   align-self: flex-start;
   padding: 1rem;
   display: inline-flex;
+  text-transform: uppercase;
   gap: 0.5rem;
   transition: all ease-in-out 0.3s;
 }
 
 .contact__us-send:hover {
   background-color: var(--brown-clr);
-  color: var(--black-clr);
+  color: var(--white-clr);
 }
 
 .contact__us-send svg {
@@ -338,6 +341,6 @@ p {
 }
 
 .contact__us-send:hover svg {
-  stroke: var(--black-clr);
+  stroke: var(--white-clr);
   transform: translateX(0.2rem);
 }
