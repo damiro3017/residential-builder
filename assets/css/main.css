@@ -395,6 +395,7 @@ p {
     padding: 2rem;
     display: flex;
     gap: 2rem;
+    text-align: left;
   }
 
   .main__focus-mission-item h3 {
