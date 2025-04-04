@@ -243,6 +243,7 @@ p {
 
 .project-item::after {
   content: "Ver proyecto";
+  font-family: "Outfit", sans-serif;
   position: absolute;
   top: 0;
   left: 0;
@@ -255,7 +256,7 @@ p {
   justify-content: center;
   opacity: 0;
   transition: all ease-in-out 0.3s;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-transform: uppercase;
 }
 
