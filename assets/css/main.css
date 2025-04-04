@@ -222,7 +222,7 @@ p {
 }
 
 .project-item:nth-child(1) {
-  background-image: url("../img/projects/project-01.webp");
+  background-image: url("../img/projects/project-06.webp");
 }
 
 .project-item:nth-child(2) {
@@ -445,5 +445,15 @@ p {
   /* Our Services section */
   .our__services__wrapper {
     flex-direction: row;
+  }
+
+  /* Contact us section */
+  .contact__us-img {
+    background-image: url("../img/contact-us.webp");
+    width: 10rem;
+    height: 10rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
