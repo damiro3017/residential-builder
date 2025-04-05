@@ -1,0 +1,86 @@
+:root {
+  --black-clr: #000;
+  --white-clr: #fff;
+  --brown-clr: #a59d84;
+  --beige-clr: #ecebde;
+  --grey-clr: #ececeb;
+}
+
+/* Global CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scrollbar-gutter: auto;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1 {
+  font-size: 2.027rem;
+}
+
+h2 {
+  font-size: 1.802rem;
+}
+
+h3 {
+  font-size: 1.424rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Playfair", serif;
+  font-weight: 400;
+}
+
+p {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
