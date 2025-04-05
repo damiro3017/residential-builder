@@ -310,6 +310,10 @@ p {
   text-wrap: balance;
 }
 
+.contact__us p {
+  margin-top: 1rem;
+}
+
 .contact__us__wrapper {
   margin-top: 2rem;
 }
