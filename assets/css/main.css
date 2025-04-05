@@ -175,6 +175,7 @@ p {
   align-items: center;
   flex-direction: column;
   text-wrap: balance;
+  text-align: center;
 }
 
 .main__focus-mission {
@@ -304,8 +305,9 @@ p {
 }
 
 .contact__us h2,
-p {
+.contact__us p {
   text-align: center;
+  text-wrap: balance;
 }
 
 .contact__us__wrapper {
