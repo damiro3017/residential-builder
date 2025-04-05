@@ -392,10 +392,6 @@ p {
   }
 
   /* Main Focus section */
-  .main__focus__section {
-    padding: 5rem 0;
-  }
-
   .main__focus-mission {
     display: flex;
     gap: 2rem;
