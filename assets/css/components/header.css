@@ -57,7 +57,7 @@
   gap: 2rem;
 }
 
-.header__navbar-item {
+.header__navbar-link {
   text-transform: uppercase;
   padding: 0.5rem;
   border-top: 1px solid transparent;
@@ -67,12 +67,7 @@
   font-family: "Outfit", sans-serif;
 }
 
-.header__navbar-item:hover {
-  border-bottom: 1px solid var(--black-clr);
-  border-top: 1px solid var(--black-clr);
-}
-
-.header__navbar-item.active-item {
+.header__navbar-link:hover {
   border-bottom: 1px solid var(--black-clr);
   border-top: 1px solid var(--black-clr);
 }
