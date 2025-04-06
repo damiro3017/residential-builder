@@ -8,7 +8,7 @@
   --white-clr: #fff;
   --brown-clr: #a59d84;
   --beige-clr: #ecebde;
-  --grey-clr: #ececeb;
+  --gray-clr: #ececeb;
 }
 
 /* Hero section */
@@ -70,7 +70,7 @@
 .visit__project-btn:hover {
   background-color: var(--brown-clr);
   color: var(--white-clr);
-  stroke: var(--grey-clr);
+  stroke: var(--gray-clr);
   opacity: 1;
 }
 
@@ -253,7 +253,7 @@
   width: 100%;
   padding: 0.75rem;
   font-family: "Outfit", sans-serif;
-  background-color: var(--grey-clr);
+  background-color: var(--gray-clr);
   border: none;
   outline: none;
 }
@@ -399,7 +399,7 @@
   }
 
   .main__focus-mission-item {
-    background-color: var(--grey-clr);
+    background-color: var(--gray-clr);
     padding: 2rem;
     display: flex;
     gap: 2rem;

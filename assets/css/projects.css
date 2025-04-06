@@ -1,1 +1,10 @@
 @import url("../css/main.css");
+
+.projects__section {
+  padding: 2rem 0;
+  background-color: var(--white-clr);
+}
+
+.projects__section-item {
+  background-color: var(--grey-clr);
+}
