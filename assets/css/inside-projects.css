@@ -1,0 +1,19 @@
+@import url("./main.css");
+
+.main__project {
+  padding-block: 3rem;
+}
+
+.main__project-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__project-info {
+  margin-top: 1rem;
+}
+
+.main__project-info p {
+  margin-top: 1rem;
+}
