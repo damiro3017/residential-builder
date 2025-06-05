@@ -9,7 +9,7 @@ export const OurProjects = () => {
         <SectionContainer className="flex flex-col">
             <DefaultTitle title="Our Projects" />
             <OurProjectsGrid />
-            <DefaultButton text="All projects" className="mt-6 self-end" />
+            <DefaultButton text="All projects" className="mt-6 self-end" to="/projects" />
         </SectionContainer>
     )
 }

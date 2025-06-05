@@ -8,8 +8,15 @@ import { FacebookIcon } from '../assets/icons/FacebookIcon'
 import { TwitterIcon } from '../assets/icons/TwitterIcon'
 import { LinkedinIcon } from '../assets/icons/LinkedinIcon'
 import { PinterestIcon } from '../assets/icons/PinterestIcon'
+import { Link } from 'react-router-dom'
 
-const infoLinks = ['Main', 'Gallery', 'Projects', 'Certifications', 'Contacts']
+const infoLinks = [
+    { title: "Main", path: "/", },
+    { title: "Gallery", path: "/gallery", },
+    { title: "Projects", path: "/projects", },
+    { title: "Certifications", path: "/certifications", },
+    { title: "Contacts", path: "/contacts", }
+]
 
 const contactItems = [
     { icon: LocationIcon, text: '1234 Sample Street Austin Texas 78704' },
@@ -18,22 +25,24 @@ const contactItems = [
 ]
 
 const socialIcons = [
-    { icon: FacebookIcon, label: 'Facebook' },
-    { icon: TwitterIcon, label: 'Twitter' },
-    { icon: LinkedinIcon, label: 'LinkedIn' },
-    { icon: PinterestIcon, label: 'Pinterest' }
+    { icon: FacebookIcon, label: 'Facebook', path: "https://www.facebook.com", },
+    { icon: TwitterIcon, label: 'Twitter', path: "https://www.twitter.com", },
+    { icon: LinkedinIcon, label: 'LinkedIn', path: "https://www.linkedin.com", },
+    { icon: PinterestIcon, label: 'Pinterest', path: "https://www.pinterest.com", }
 ]
 
 export const Footer = () => (
     <footer className="bg-brand-mineshaft text-brand-alabaster py-8">
         <div className="px-4 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <PageIcon className="size-20" />
+            <Link to="/">
+                <PageIcon className="size-20" />
+            </Link>
 
             <div>
                 <FooterTitle text="Information" />
                 <ul className="mt-6 flex flex-col gap-4">
-                    {infoLinks.map(link => (
-                        <li key={link}>{link}</li>
+                    {infoLinks.map((e, index) => (
+                        <Link key={index} to={e.path}>{e.title}</Link>
                     ))}
                 </ul>
             </div>
@@ -53,15 +62,14 @@ export const Footer = () => (
             <div>
                 <FooterTitle text="Social Media" />
                 <ul className="mt-6 flex items-center gap-4">
-                    {socialIcons.map(({ icon: Icon, label }) => (
-                        <li key={label}>
-                            <a href="#" aria-label={label}>
-                                <Icon className="size-6" />
-                            </a>
-                        </li>
+                    {socialIcons.map(({ icon: Icon, path }, index) => (
+                        <Link key={index} to={path}>
+                            <Icon className="size-6" />
+                        </Link>
                     ))}
                 </ul>
             </div>
+
         </div>
         <p className="text-center mt-8 text-sm">Damiro Gómez</p>
     </footer>

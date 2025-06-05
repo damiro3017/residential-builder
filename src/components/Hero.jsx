@@ -20,7 +20,7 @@ export const Hero = () => {
                         src={HeroBanner}
                         alt=""
                     />
-                    <DefaultButton className="absolute left-0 bottom-0" text="View Project" />
+                    <DefaultButton className="absolute left-0 bottom-0" text="View Project" to="/projects/1" />
                 </div>
             </SectionContainer>
         </>
