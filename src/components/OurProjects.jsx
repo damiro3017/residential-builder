@@ -7,9 +7,9 @@ import { DefaultButton } from './DefaultButton'
 export const OurProjects = () => {
     return (
         <SectionContainer className="flex flex-col">
-            <DefaultTitle title="Our Projects" />
+            <DefaultTitle title="Nuestros Proyectos" />
             <OurProjectsGrid />
-            <DefaultButton text="All projects" className="mt-6 self-end" to="/projects" />
+            <DefaultButton text="Todos los proyectos" className="mt-6 self-end" to="/projects" />
         </SectionContainer>
     )
 }

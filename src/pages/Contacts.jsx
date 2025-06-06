@@ -3,30 +3,31 @@ import { DefaultTitle } from "../components/DefaultTitle"
 import Maps from "../assets/images/maps.png"
 
 const CONTACT = [
-  { title: "Company Name", contact: "1234 Sample Street Austin Texas 76401", },
-  { title: "Phone", contact: "512 - 333 - 2222", },
-  { title: "Email", contact: "sampleemail@gmail.com", }
+  { title: "Dirección", contact: "Av. Las Acacias 456, Austin, TX 78701" },
+  { title: "Teléfono", contact: "+1 (512) 555-0198" },
+  { title: "Correo electrónico", contact: "contacto@casasfamiliares.com" }
 ]
-
 
 export const Contacts = () => {
   return (
     <SectionContainer>
-      <div className="flex gap-8">
+      <div className="flex flex-col lg:flex-row gap-8">
         <div className="flex-1">
-          <DefaultTitle title="Contact" subtitle="Information" />
-          {CONTACT.map((e) => (
-            <ul>
-              <p className="font-bold mt-8">{e.title}</p>
-              <p>{e.contact}</p>
-            </ul>
-          ))}
+          <DefaultTitle title="Contacto" subtitle="Conecta con nosotros" />
+          <ul className="mt-6 space-y-6">
+            {CONTACT.map((e, idx) => (
+              <li key={idx}>
+                <p className="font-bold text-brand-contrast">{e.title}</p>
+                <p>{e.contact}</p>
+              </li>
+            ))}
+          </ul>
         </div>
-        <div className="flex-2">
+        <div className="flex-1">
           <img
-            className="w-full object-cover"
+            className="w-full h-full object-cover"
             src={Maps}
-            alt=""
+            alt="Ubicación en el mapa"
           />
         </div>
       </div>

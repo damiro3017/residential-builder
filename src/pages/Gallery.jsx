@@ -1,3 +1,4 @@
+import { DefaultTitle } from "../components/DefaultTitle"
 import { SectionContainer } from "../components/SectionContainer"
 import { ProjectsData } from "../data/ProjectsData"
 
@@ -5,7 +6,8 @@ export const Gallery = () => {
   return (
     <>
       <SectionContainer>
-        <div className='grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-8'>
+        <DefaultTitle title="Galería" subtitle="Hogares" />
+        <div className='grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-8 mt-8'>
           {ProjectsData.map((e) => {
             return <img
               key={e.id}

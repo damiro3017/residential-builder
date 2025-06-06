@@ -1,4 +1,3 @@
-import React from 'react'
 import { SectionContainer } from './SectionContainer'
 import { DefaultTitle } from './DefaultTitle'
 import { MainFocusNumber } from './MainFocusNumber'
@@ -12,7 +11,7 @@ const mission = [
 export const MainFocus = () => {
     return (
         <SectionContainer>
-            <DefaultTitle title="Main Focus/Mission Statement" />
+            <DefaultTitle title="Misión" />
             <article className='grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-20'>
                 {mission.map((e, index) => (
                     <div key={index} className='flex gap-4 items-start mt-8'>

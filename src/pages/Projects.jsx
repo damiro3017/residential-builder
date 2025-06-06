@@ -6,8 +6,8 @@ import { ProjectsData } from "../data/ProjectsData"
 export const Projects = () => {
   return (
     <SectionContainer>
-      <DefaultTitle title="Our" subtitle="Projects" />
-      <div className="flex flex-col gap-8 mt-16">
+      <DefaultTitle title="Nuestros" subtitle="Proyectos" />
+      <div className="flex flex-col gap-8 mt-8">
         {ProjectsData.map((e) => (
           <ProjectsCard
             key={e.id}

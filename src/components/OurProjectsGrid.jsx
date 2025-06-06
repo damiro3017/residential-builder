@@ -1,9 +1,9 @@
 import React from 'react'
-import Project01 from "../assets/images/project_01.webp"
-import Project02 from "../assets/images/project_02.webp"
-import Project03 from "../assets/images/project_03.webp"
-import Project04 from "../assets/images/project_04.webp"
-import Project05 from "../assets/images/project_05.webp"
+import Project01 from "../assets/images/projects_01a.png"
+import Project02 from "../assets/images/projects_02a.png"
+import Project03 from "../assets/images/projects_03a.png"
+import Project04 from "../assets/images/projects_04a.png"
+import Project05 from "../assets/images/projects_05a.png"
 import { Link } from 'react-router-dom'
 
 export const OurProjectsGrid = () => {
@@ -28,7 +28,7 @@ export const OurProjectsGrid = () => {
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <Link to={project.path} className="absolute inset-0 bg-brand-mineshaft bg-opacity-0 cursor-pointer group-hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center">
-                        <h3 className="text-white text-3xl
+                        <h3 className="text-white text-3xl uppercase
                         opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 font-bold">
                             {project.title}
                         </h3>

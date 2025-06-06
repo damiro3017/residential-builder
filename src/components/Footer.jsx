@@ -1,4 +1,4 @@
-import React from 'react'
+import { Link } from 'react-router-dom'
 import { FooterTitle } from './FooterTitle'
 import { PageIcon } from '../assets/icons/PageIcon'
 import { PhoneIcon } from '../assets/icons/PhoneIcon'
@@ -8,27 +8,26 @@ import { FacebookIcon } from '../assets/icons/FacebookIcon'
 import { TwitterIcon } from '../assets/icons/TwitterIcon'
 import { LinkedinIcon } from '../assets/icons/LinkedinIcon'
 import { PinterestIcon } from '../assets/icons/PinterestIcon'
-import { Link } from 'react-router-dom'
 
 const infoLinks = [
-    { title: "Main", path: "/", },
-    { title: "Gallery", path: "/gallery", },
-    { title: "Projects", path: "/projects", },
-    { title: "Certifications", path: "/certifications", },
-    { title: "Contacts", path: "/contacts", }
+    { title: "Inicio", path: "/" },
+    { title: "Galería", path: "/gallery" },
+    { title: "Proyectos", path: "/projects" },
+    { title: "Certificaciones", path: "/certifications" },
+    { title: "Contactos", path: "/contacts" }
 ]
 
 const contactItems = [
-    { icon: LocationIcon, text: '1234 Sample Street Austin Texas 78704' },
-    { icon: PhoneIcon, text: '512 - 333 - 2222' },
-    { icon: MailIcon, text: 'sampleemail@gmail.com' }
+    { icon: LocationIcon, text: 'Av. Las Acacias 456, Austin, TX 78701' },
+    { icon: PhoneIcon, text: '+1 (512) 555-0198' },
+    { icon: MailIcon, text: 'contacto@casasfamiliares.com' }
 ]
 
 const socialIcons = [
-    { icon: FacebookIcon, label: 'Facebook', path: "https://www.facebook.com", },
-    { icon: TwitterIcon, label: 'Twitter', path: "https://www.twitter.com", },
-    { icon: LinkedinIcon, label: 'LinkedIn', path: "https://www.linkedin.com", },
-    { icon: PinterestIcon, label: 'Pinterest', path: "https://www.pinterest.com", }
+    { icon: FacebookIcon, label: 'Facebook', path: "https://www.facebook.com" },
+    { icon: TwitterIcon, label: 'Twitter', path: "https://www.twitter.com" },
+    { icon: LinkedinIcon, label: 'LinkedIn', path: "https://www.linkedin.com" },
+    { icon: PinterestIcon, label: 'Pinterest', path: "https://www.pinterest.com" }
 ]
 
 export const Footer = () => (
@@ -37,18 +36,16 @@ export const Footer = () => (
             <Link to="/">
                 <PageIcon className="size-20" />
             </Link>
-
             <div>
-                <FooterTitle text="Information" />
+                <FooterTitle text="Información" />
                 <ul className="mt-6 flex flex-col gap-4">
-                    {infoLinks.map((e, index) => (
-                        <Link key={index} to={e.path}>{e.title}</Link>
+                    {infoLinks.map(({ title, path }, index) => (
+                        <Link key={index} to={path}>{title}</Link>
                     ))}
                 </ul>
             </div>
-
             <div>
-                <FooterTitle text="Contacts" />
+                <FooterTitle text="Contactos" />
                 <address className="not-italic mt-6 flex flex-col gap-4">
                     {contactItems.map(({ icon: Icon, text }, i) => (
                         <div key={i} className="flex items-center gap-4">
@@ -58,18 +55,22 @@ export const Footer = () => (
                     ))}
                 </address>
             </div>
-
             <div>
-                <FooterTitle text="Social Media" />
+                <FooterTitle text="Redes Sociales" />
                 <ul className="mt-6 flex items-center gap-4">
                     {socialIcons.map(({ icon: Icon, path }, index) => (
-                        <Link key={index} to={path}>
+                        <a
+                            key={index}
+                            href={path}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label={socialIcons[index].label}
+                        >
                             <Icon className="size-6" />
-                        </Link>
+                        </a>
                     ))}
                 </ul>
             </div>
-
         </div>
         <p className="text-center mt-8 text-sm">Damiro Gómez</p>
     </footer>

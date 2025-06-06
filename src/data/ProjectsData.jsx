@@ -1,45 +1,45 @@
-import Project01 from "../assets/images/project_01.webp"
-import Project02 from "../assets/images/project_02.webp"
-import Project03 from "../assets/images/project_03.webp"
-import Project04 from "../assets/images/project_04.webp"
-import Project05 from "../assets/images/project_05.webp"
-import Project06 from "../assets/images/project_06.webp"
+import Project01 from "../assets/images/projects_01a.png"
+import Project02 from "../assets/images/projects_02a.png"
+import Project03 from "../assets/images/projects_03a.png"
+import Project04 from "../assets/images/projects_04a.png"
+import Project05 from "../assets/images/projects_05a.png"
+import Project06 from "../assets/images/projects_06a.png"
 
 export const ProjectsData = [
     {
         id: 1,
         image: Project01,
-        title: "Residencial Las Palmas",
-        description: "Proyecto de viviendas modernas con áreas verdes y espacios recreativos. Este desarrollo ofrece un entorno seguro y tranquilo, ideal para familias que buscan calidad de vida. Cuenta con parques, senderos peatonales y zonas de esparcimiento, además de acceso cercano a escuelas, centros comerciales y servicios esenciales.",
+        title: "Casa Los Robles",
+        description: "Diseñada para quienes valoran la serenidad del hogar, Casa Los Robles ofrece un estilo clásico americano con un amplio jardín frontal, terraza techada y cochera privada. Su diseño cálido y funcional crea un ambiente perfecto para crecer en familia. A pasos de zonas escolares y parques vecinales, este hogar combina comodidad, seguridad y vida comunitaria.",
     },
     {
         id: 2,
         image: Project02,
-        title: "Edificio Central Park",
-        description: "Complejo de departamentos de lujo en el centro de la ciudad. Disfruta de una ubicación privilegiada, acabados de alta gama y vistas panorámicas. El edificio incluye gimnasio, piscina, salón de eventos y seguridad 24/7, brindando comodidad y exclusividad a sus residentes.",
+        title: "Residencia El Bosque",
+        description: "Moderna y funcional, esta residencia de dos niveles presenta un diseño contemporáneo con líneas limpias, ventanales panorámicos y una distribución inteligente. Con tres habitaciones, una sala de juegos familiar y patio trasero con deck de madera, El Bosque es ideal para familias que buscan confort y estilo en una comunidad tranquila y conectada.",
     },
     {
         id: 3,
         image: Project03,
-        title: "Condominio Vista Lago",
-        description: "Condominio exclusivo con vista panorámica al lago y amenidades premium. Ofrece departamentos amplios y luminosos, terrazas privadas, áreas verdes y acceso directo al lago. Ideal para quienes buscan tranquilidad, naturaleza y un estilo de vida sofisticado.",
+        title: "Hogar Vista Verde",
+        description: "Inspirada en la vida al aire libre, Vista Verde combina arquitectura abierta con un entorno natural. Cuenta con jardín privado, espacio para parrilla y áreas interiores pensadas para la convivencia familiar. Ideal para quienes sueñan con tardes en el jardín, niños jugando libres y un ambiente que fomente el bienestar diario.",
     },
     {
         id: 4,
         image: Project04,
-        title: "Torre Empresarial Norte",
-        description: "Edificio corporativo con oficinas inteligentes y tecnología de punta. Diseñado para empresas modernas, cuenta con espacios flexibles, salas de reuniones equipadas, cafetería, estacionamiento subterráneo y sistemas de seguridad avanzados, facilitando la productividad y el bienestar laboral.",
+        title: "Casa Jardines del Sol",
+        description: "Con cuatro habitaciones, amplias salas y un diseño pensado para grandes familias, Jardines del Sol ofrece el equilibrio perfecto entre privacidad y vida compartida. Está ubicada en una comunidad cerrada con parques infantiles, senderos y vigilancia 24/7, lo que la convierte en una opción ideal para quienes priorizan la seguridad sin renunciar a la calidad de vida.",
     },
     {
         id: 5,
         image: Project05,
-        title: "Residencias Jardín",
-        description: "Casas familiares rodeadas de jardines y zonas de juegos infantiles. Este proyecto ofrece viviendas espaciosas, áreas comunes para convivir y seguridad privada. Perfecto para familias que valoran la naturaleza, la tranquilidad y el desarrollo integral de sus hijos.",
+        title: "Residencial La Arboleda",
+        description: "Este conjunto residencial ofrece casas independientes rodeadas de áreas verdes, parques comunitarios y zonas de recreo. Las viviendas cuentan con cocinas abiertas, espacios sociales amplios y garaje privado. Es el entorno perfecto para criar hijos rodeados de naturaleza, aire puro y una comunidad comprometida con la armonía familiar.",
     },
     {
         id: 6,
         image: Project06,
-        title: "Complejo Riviera",
-        description: "Desarrollo residencial con club social, piscina y gimnasio. El complejo brinda un ambiente exclusivo con instalaciones deportivas, áreas de descanso y actividades recreativas para toda la familia. Su diseño moderno y servicios integrales garantizan una experiencia de vida única.",
+        title: "Villa Familiar Riviera",
+        description: "Una joya residencial que integra diseño moderno con espacios recreativos privados. La villa cuenta con piscina, salón multiuso, jardín trasero y ambientes pensados para el disfrute en familia. Riviera es sinónimo de calidad de vida, cercana a escuelas, centros comerciales y servicios, ideal para quienes buscan comodidad, elegancia y funcionalidad en un solo lugar.",
     }
-];
+]

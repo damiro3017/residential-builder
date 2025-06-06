@@ -6,17 +6,17 @@ import { DefaultButton } from './DefaultButton'
 import BannerContact from "../assets/images/banner_contact.png"
 
 const contacts = [
-    { type: "text", placeholder: "Name", required: false },
-    { type: "tel", placeholder: "Phone Number*", required: true },
-    { type: "email", placeholder: "E-mail*", required: true },
-    { type: "text", placeholder: "Interested In", required: false },
-    { type: "textarea", placeholder: "Message*", required: true },
+    { type: "text", placeholder: "Nombre", required: false },
+    { type: "tel", placeholder: "Teléfono*", required: true },
+    { type: "email", placeholder: "Correo electrónico*", required: true },
+    { type: "text", placeholder: "Interesado en", required: false },
+    { type: "textarea", placeholder: "Mensaje*", required: true },
 ];
 
 export const ContactUs = () => {
     return (
         <SectionContainer>
-            <DefaultTitle title="Contact Us" />
+            <DefaultTitle title="Contáctanos" />
             <div className='mt-6 grid grid-cols-5 gap-10'>
                 <form className='col-span-2 flex flex-col items-start gap-4'>
                     {contacts.map((contact, index) => (
@@ -40,7 +40,7 @@ export const ContactUs = () => {
                     <img src={BannerContact} alt="" />
                 </div>
             </div>
-            <DefaultButton text="Send Email" className="mt-16" />
+            <DefaultButton text="Enviar correo" className="mt-8" />
         </SectionContainer>
     )
 }

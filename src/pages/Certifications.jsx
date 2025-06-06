@@ -4,7 +4,7 @@ import { DefaultTitle } from "../components/DefaultTitle"
 export const Certifications = () => {
   return (
     <SectionContainer>
-      <DefaultTitle title="Company" subtitle="Certifications" />
+      <DefaultTitle title="Certificaciones" subtitle="Empresariales" />
     </SectionContainer>
   )
 }
