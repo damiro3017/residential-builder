@@ -9,8 +9,9 @@ export const Hero = () => {
     if (!latestProject) return null
 
     return (
-        <SectionContainer className="grid grid-cols-7 pt-0 gap-8">
-            <div className="col-span-3">
+        <SectionContainer className="grid grid-cols-1 text-center md:text-left md:grid-cols-7 
+         pt-0 gap-8 mt-8 md:mt-0">
+            <div className="md:col-span-3">
                 <h1 className="text-7xl text-gray-400 font-light uppercase">
                     {latestProject.title}
                 </h1>
@@ -18,9 +19,9 @@ export const Hero = () => {
                     {latestProject.description}
                 </DefaultText>
             </div>
-            <div className="relative col-span-4">
+            <div className="relative md:col-span-4">
                 <img
-                    className="w-full object-cover"
+                    className="w-full h-full object-cover"
                     src={latestProject.banner}
                     alt={`Banner de ${latestProject.title}`}
                 />

@@ -11,11 +11,12 @@ const linksNavbar = [
 
 export const Header = () => {
     return (
-        <header className="flex items-center justify-between py-4 px-4 mx-auto max-w-7xl">
+        <header className="flex flex-col lg:flex-row items-center justify-between py-4 px-4 
+        mx-auto max-w-7xl">
             <Link to="/">
                 <PageIcon className="size-10" />
             </Link>
-            <ul className="flex items-center gap-6">
+            <ul className="flex items-center gap-6 mt-4 lg:mt-0">
                 {linksNavbar.map((enlace, indice) => (
                     <HeaderLink key={indice} text={enlace.texto} to={enlace.ruta} />
                 ))}

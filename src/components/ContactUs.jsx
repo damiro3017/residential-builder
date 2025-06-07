@@ -16,7 +16,7 @@ export const ContactUs = () => {
     return (
         <SectionContainer>
             <DefaultTitle title="Contáctanos" />
-            <div className='mt-6 grid grid-cols-5 gap-10'>
+            <div className='mt-6 grid grid-cols-1  md:grid-cols-5 gap-10'>
                 <form className='col-span-2 flex flex-col items-start gap-4'>
                     {contacts.map((contact, index) => (
                         contact.type === "tel" ? (
@@ -35,7 +35,7 @@ export const ContactUs = () => {
                         )
                     ))}
                 </form>
-                <div className='col-span-3'>
+                <div className='hidden md:block md:col-span-3'>
                     <img src={BannerContact} alt="" />
                 </div>
             </div>

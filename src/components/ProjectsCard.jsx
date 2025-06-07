@@ -3,7 +3,7 @@ import { DefaultButton } from "./DefaultButton"
 
 export const ProjectsCard = ({ image, title, description, path }) => {
     return (
-        <div className="flex bg-gray-100">
+        <div className="flex flex-col md:flex-row bg-gray-100">
             <img
                 className="w-full h-full object-cover aspect-[4/3] flex-1"
                 src={image}
@@ -18,7 +18,7 @@ export const ProjectsCard = ({ image, title, description, path }) => {
                 <DefaultText className="mt-4">
                     {description}
                 </DefaultText>
-                <DefaultButton text="Ver proyecto" className="mt-auto" to={path} />
+                <DefaultButton text="Ver proyecto" className="mt-8 lg:mt-auto" to={path} />
             </div>
         </div>
     )
