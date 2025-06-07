@@ -16,7 +16,7 @@ export const Header = () => {
             <Link to="/">
                 <PageIcon className="size-10" />
             </Link>
-            <ul className="flex items-center gap-6 mt-4 lg:mt-0">
+            <ul className="flex items-center justify-center flex-wrap gap-4 mt-4 lg:mt-0">
                 {linksNavbar.map((enlace, indice) => (
                     <HeaderLink key={indice} text={enlace.texto} to={enlace.ruta} />
                 ))}
