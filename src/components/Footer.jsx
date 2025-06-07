@@ -13,7 +13,6 @@ const infoLinks = [
     { title: "Inicio", path: "/" },
     { title: "Galería", path: "/gallery" },
     { title: "Proyectos", path: "/projects" },
-    { title: "Certificaciones", path: "/certifications" },
     { title: "Contactos", path: "/contacts" }
 ]
 

@@ -3,7 +3,6 @@ import { Route, Routes } from 'react-router-dom';
 import { HomePage } from './pages/HomePage';
 import { Gallery } from "./pages/Gallery"
 import { Projects } from "./pages/Projects"
-import { Certifications } from "./pages/Certifications"
 import { Contacts } from "./pages/Contacts"
 import { NotFound } from "./pages/NotFound"
 import { Header } from './components/Header';
@@ -21,7 +20,6 @@ function App() {
         <Route path='/gallery' element={<Gallery />} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/projects/:id' element={<ProjectsItem />} />
-        <Route path='/certifications' element={<Certifications />} />
         <Route path='/contacts' element={<Contacts />} />
         <Route path='*' element={<NotFound />} />
       </Routes>

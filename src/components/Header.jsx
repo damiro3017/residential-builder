@@ -6,7 +6,6 @@ const linksNavbar = [
     { texto: "Inicio", ruta: "/" },
     { texto: "Galería", ruta: "/gallery" },
     { texto: "Proyectos", ruta: "/projects" },
-    { texto: "Certificaciones", ruta: "/certifications" },
     { texto: "Contactos", ruta: "/contacts" },
 ]
 
