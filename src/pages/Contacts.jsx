@@ -1,6 +1,6 @@
 import { SectionContainer } from "../components/SectionContainer"
 import { DefaultTitle } from "../components/DefaultTitle"
-import Maps from "../assets/images/maps.png"
+import Maps from "../assets/images/maps.webp"
 
 const CONTACT = [
   { title: "Dirección", contact: "Av. Las Acacias 456, Austin, TX 78701" },

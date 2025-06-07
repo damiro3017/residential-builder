@@ -2,7 +2,7 @@ import React from 'react'
 import { SectionContainer } from './SectionContainer'
 import { DefaultTitle } from './DefaultTitle'
 import { DefaultButton } from './DefaultButton'
-import Project01 from "../assets/images/projects_01a.png"
+import Project01 from "../assets/images/projects_01a.webp"
 
 export const Hero = () => {
     return (

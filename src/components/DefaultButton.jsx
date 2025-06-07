@@ -1,4 +1,3 @@
-import React from 'react'
 import { ArrowIcon } from '../assets/icons/ArrowIcon'
 import { Link } from 'react-router-dom'
 

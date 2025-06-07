@@ -1,9 +1,9 @@
 import React from 'react'
-import Project01 from "../assets/images/projects_01a.png"
-import Project02 from "../assets/images/projects_02a.png"
-import Project03 from "../assets/images/projects_03a.png"
-import Project04 from "../assets/images/projects_04a.png"
-import Project05 from "../assets/images/projects_05a.png"
+import Project01 from "../assets/images/projects_01a.webp"
+import Project02 from "../assets/images/projects_02a.webp"
+import Project03 from "../assets/images/projects_03a.webp"
+import Project04 from "../assets/images/projects_04a.webp"
+import Project05 from "../assets/images/projects_05a.webp"
 import { Link } from 'react-router-dom'
 
 export const OurProjectsGrid = () => {

@@ -3,9 +3,9 @@ import { DefaultTitle } from './DefaultTitle';
 import { DefaultButton } from './DefaultButton';
 import { DefaultText } from './DefaultText';
 
-import About01 from '../assets/images/about_01.png';
-import About02 from '../assets/images/about_02.png';
-import About03 from '../assets/images/about_03.png';
+import About01 from '../assets/images/about_01.webp';
+import About02 from '../assets/images/about_02.webp';
+import About03 from '../assets/images/about_03.webp';
 
 export const About = () => (
     <div>

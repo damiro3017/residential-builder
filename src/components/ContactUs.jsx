@@ -1,9 +1,8 @@
-import React from 'react'
 import { SectionContainer } from './SectionContainer'
 import { DefaultTitle } from './DefaultTitle'
 import { ContactUsInput } from './ContactUsInput'
 import { DefaultButton } from './DefaultButton'
-import BannerContact from "../assets/images/banner_contact.png"
+import BannerContact from "../assets/images/banner_contact.webp"
 
 const contacts = [
     { type: "text", placeholder: "Nombre", required: false },
