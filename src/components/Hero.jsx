@@ -11,7 +11,7 @@ export const Hero = () => {
     return (
         <SectionContainer className="grid grid-cols-1 text-center md:text-left md:grid-cols-7 
          pt-0 gap-8 mt-8 md:mt-0">
-            <div className="md:col-span-3">
+            <div className="md:col-span-3 place-content-center">
                 <h1 className="text-7xl text-gray-400 font-light uppercase">
                     {latestProject.title}
                 </h1>
