@@ -18,7 +18,7 @@ export const ProjectsCard = ({ image, title, description, path }) => {
                 <DefaultText className="mt-4">
                     {description}
                 </DefaultText>
-                <DefaultButton text="Ver más" className="mt-auto" to={path} />
+                <DefaultButton text="Ver proyecto" className="mt-auto" to={path} />
             </div>
         </div>
     )

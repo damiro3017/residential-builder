@@ -1,12 +1,12 @@
 import { useParams } from "react-router-dom"
-import ProjectsItemData from "../data/ProjectsItemData";
+import ProjectsData from "../data/ProjectsData";
 import { SectionContainer } from "./SectionContainer";
 import { DefaultTitle } from "./DefaultTitle";
 import { DefaultText } from "./DefaultText";
 
 export const ProjectsItem = () => {
     const { id } = useParams();
-    const data = ProjectsItemData.find(item => item.id === Number(id));
+    const data = ProjectsData.find(item => item.id === Number(id));
 
     return (
         <SectionContainer>

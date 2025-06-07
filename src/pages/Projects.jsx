@@ -1,7 +1,7 @@
 import { DefaultTitle } from "../components/DefaultTitle"
 import { ProjectsCard } from "../components/ProjectsCard"
 import { SectionContainer } from "../components/SectionContainer"
-import { ProjectsData } from "../data/ProjectsData"
+import ProjectsData from "../data/ProjectsData"
 
 export const Projects = () => {
   return (
@@ -11,7 +11,7 @@ export const Projects = () => {
         {ProjectsData.map((e) => (
           <ProjectsCard
             key={e.id}
-            image={e.image}
+            image={e.banner}
             title={e.title}
             description={e.description}
             path={`/projects/${e.id}`} />
