@@ -3,7 +3,7 @@ import { DefaultButton } from "./DefaultButton"
 
 export const ProjectsCard = ({ image, title, description, path }) => {
     return (
-        <div className="flex flex-col md:flex-row bg-gray-100">
+        <div className="grid grid-cols-1 md:grid-cols-2 bg-gray-100">
             <img
                 className="w-full h-full object-cover aspect-[4/3] flex-1"
                 src={image}
